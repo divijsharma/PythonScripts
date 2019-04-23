@@ -1,0 +1,35 @@
+Steps on how to create virtual environment in Ubuntu Machine
+
+1. Install virtualenv
+2. Create a New project 
+	mkproject --python=python<version> <name of project>
+	Example - mkproject --python=python3.6 myproject
+3. Activate the virtual environment
+	workon <name>
+4. Install all the required packages in the virtual environment
+5. Deactivate the virtual environment
+	deactivate <name> 
+
+Getting the list of installed packages in the environment
+pip list
+
+Creating requirements.txt for installing the same packages to a different environment
+1. pip freeze>requirements.txt
+2. Copy the above file to new environment
+3. pip install -r requirements.txt
+
+Working with PyCharm and pointing to a virtual environment
+1. File -> Settings -> Project:<name> -> Project Interpreter
+2. Click on Gear Icon
+3. Click on Add
+4. Click on Virtualenv Environment
+5. Select Existing Environment (You should have already created virtal environment and installed all the necessary packages)
+6. Click on 3 dots in Interpreter (...)
+7. Select /home/<user>/Envs/<projectname>/bin/python<version> example - /home/divij/Envs/ithelpdesk/bin/python3.6
+8. Save the settings
+9. Run the code
+
+
+
+
+
